@@ -134,7 +134,7 @@ a {
               float: left;
               margin: 0 !important;
               .level-top {
-                transition: all 0.3s;
+              
                 padding: 0 10px;
                 font-size: 1.5rem;
                 letter-spacing: 0.6px;
@@ -259,7 +259,7 @@ a {
         position: absolute;
         left: 0;
         top: 50%;
-        transform: translateY(-50%);
+      
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -328,7 +328,7 @@ a {
     display: none;
     cursor:pointer;
 }
-#divList,ul,Li-1{
+.divList,ul,Li-1{
    
     a{
       font-size: 16px;
@@ -346,40 +346,44 @@ a {
   display: block;
   margin-top:25px;
 }
-#divList>ul{
+.divList>ul{
   display: flex;
   padding: 17px;
   
 }
-#divList>ul>li{
+.divList>ul>li{
   border-right:1px solid #000 ;
   padding-left:10px ;
 }
-#divList>ul>.Li-1{
+.divList>ul>.Li-1{
   width: 261px;
 }
-#divList>ul>.Li-4{
+.divList>ul>.Li-4{
   border:none;
   width: 346px;
 }
-#divList>ul>.Li-3{
+.divList>ul>.Li-3{
   width: 261px;
-  text-align: center;
+ 
   line-height: 50px;
-  .iconfont{
-    font-size: 28px;
-   color:  red;
-  }
   span{
-    color:red;
+   
     font-size:14px;
-    margin-left: 10px;
   }
   .icf1{
     color: #777;
   }
+  .iconfont{
+    font-size: 28px;
+    color:  red;
+  }
+  i{
+    display: inline-block;
+    width: 30px;
+    margin-right: 20px;
+  }
 }
-#divList>ul>.Li-2{
+.divList>ul>.Li-2{
   width: 372px;
   display: flex;
   
@@ -394,11 +398,13 @@ a {
     }
   }
 }
-#divList{
+.divList{
   display: flex;
   justify-content: center;
   align-items: center;
  display: none;
 }
   
- 
+.div0{
+  display:none;
+}
