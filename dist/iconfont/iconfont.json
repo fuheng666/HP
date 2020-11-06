@@ -20,6 +20,20 @@
       "unicode_decimal": 58915
     },
     {
+      "icon_id": "4294026",
+      "name": "优惠",
+      "font_class": "youhui",
+      "unicode": "e773",
+      "unicode_decimal": 59251
+    },
+    {
+      "icon_id": "6527108",
+      "name": "电脑",
+      "font_class": "diannao",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
       "icon_id": "6677881",
       "name": "账户",
       "font_class": "zhanghu",

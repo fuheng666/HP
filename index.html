@@ -60,7 +60,7 @@
                         >
                           <span> 企业解决方案 </span>
                         </a>
-                         <div id="triangle" class='div0' style="height: 10px ; position: relative;">
+                         <div class="triangle" class='div0' style="height: 10px ; position: relative;">
                             <em style=" font-size: 30px;  position: absolute;   color: #c1c1c1; top: -22px; left: 42%;" >&#9670;</em>
                             <span style=" font-size: 30px; position: absolute;   color: #f2f2f2; top: -21px;left: 42%">&#9670;</span>
                          </div>
@@ -72,7 +72,7 @@
                         >
                           <span> 笔记本及平板 </span>
                         </a>
-                        <div id="triangle"class='div1' style="height: 10px ; position: relative;display: none;">
+                        <div class="triangle"class='div1' style="height: 10px ; position: relative;display: none;">
                           <em style=" font-size: 30px;  position: absolute;   color: #c1c1c1; top: -22px; left: 42%;" >&#9670;</em>
                           <span style=" font-size: 30px; position: absolute;   color: #f2f2f2; top: -21px;left: 42%">&#9670;</span>
                        </div>
@@ -84,7 +84,7 @@
                         >
                           <span> 台式及一体机 </span>
                         </a>
-                        <div id="triangle"class='div2' style="height: 10px ; position: relative;display: none;">
+                        <div class="triangle"class='div2' style="height: 10px ; position: relative;display: none;">
                           <em style=" font-size: 30px;  position: absolute;   color: #c1c1c1; top: -22px; left: 42%;" >&#9670;</em>
                           <span style=" font-size: 30px; position: absolute;   color: #f2f2f2; top: -21px;left: 42%">&#9670;</span>
                        </div>
@@ -96,7 +96,7 @@
                         >
                           <span> 打印机 </span>
                         </a>
-                        <div id="triangle"class='div3' style="height: 10px ; position: relative;display: none;">
+                        <div class="triangle"class='div3' style="height: 10px ; position: relative;display: none;">
                           <em style=" font-size: 30px;  position: absolute;   color: #c1c1c1; top: -22px; left: 42%;" >&#9670;</em>
                           <span style=" font-size: 30px; position: absolute;   color: #f2f2f2; top: -21px;left: 42%">&#9670;</span>
                        </div>
@@ -108,7 +108,7 @@
                         >
                           <span> 硒鼓和墨盒 </span>
                         </a>
-                        <div id="triangle"class='div4' style="height: 10px ; position: relative;display: none;">
+                        <div class="triangle"class='div4' style="height: 10px ; position: relative;display: none;">
                           <em style=" font-size: 30px;  position: absolute;   color: #c1c1c1; top: -22px; left: 42%;" >&#9670;</em>
                           <span style=" font-size: 30px; position: absolute;   color: #f2f2f2; top: -21px;left: 42%">&#9670;</span>
                        </div>
@@ -120,7 +120,7 @@
                         >
                           <span> 显示屏 </span>
                         </a>
-                        <div id="triangle"class='div5' style="height: 10px ; position: relative;display: none;">
+                        <div class="triangle"class='div5' style="height: 10px ; position: relative;display: none;">
                           <em style=" font-size: 30px;  position: absolute;   color: #c1c1c1; top: -22px; left: 42%;" >&#9670;</em>
                           <span style=" font-size: 30px; position: absolute;   color: #f2f2f2; top: -21px;left: 42%">&#9670;</span>
                        </div>
@@ -144,7 +144,7 @@
                         >
                           <span> 优惠销售 </span>
                         </a>
-                        <div id="triangle"class='div7' style="height: 10px ; position: relative;display: none;">
+                        <div class="triangle"class='div7' style="height: 10px ; position: relative;display: none;">
                           <em style=" font-size: 30px;  position: absolute;   color: #c1c1c1; top: -22px; left: 42%;" >&#9670;</em>
                           <span style=" font-size: 30px; position: absolute;   color: #f2f2f2; top: -21px;left: 42%">&#9670;</span>
                        </div>
@@ -156,7 +156,7 @@
                         >
                           <span> 产品支援 </span>
                         </a>
-                        <div id="triangle"class='div8' style="height: 10px ; position: relative; display: none;">
+                        <div class="triangle"class='div8' style="height: 10px ; position: relative; display: none;">
                           <em style=" font-size: 30px;  position: absolute;   color: #c1c1c1; top: -22px; left: 42%;" >&#9670;</em>
                           <span style=" font-size: 30px; position: absolute;   color: #f2f2f2; top: -21px;left: 42%">&#9670;</span>
                        </div>
@@ -181,9 +181,9 @@
             </ul>
           </div>
         </div>
-       <div style="height: 300px; background: #f2f2f2; display: flex;justify-content: center;align-items: center;
+       <div style="height: 300px; background: #f2f2f2;
        " id="divList" >
-          <ul style="width: 1280px; height: 100%; background-color: red;">
+          <ul style="width: 1280px; height: 100%; ">
               <li class="Li-1">
                 <a href="">按用途选择</a>
                 <ul>
@@ -195,27 +195,109 @@
                 </ul>
               </li>
               <li class="Li-2">
-                <a href="">按系列选择</a>
                 <ul>
-                  <li>笔记本/移动工作站</li>
+                <a href="">按系列选择</a>
+                  <span>笔记本/移动工作站</span>
                   <li>HP达人系列笔记本</li>
                   <li>HP达人系列笔记本</li>
                   <li>HP达人系列笔记本</li>
                   <li>HP达人系列笔记本</li>
                 </ul>
                 <ul>
+                  <span id="a1">桌面 / AiO / 工作站</span>
                   <li>笔记本/移动工作站</li>
                   <li>HP达人系列笔记本</li>
                 </ul>
               </li>
               <li class="Li-3">
-                <div>1<span>企业解决方案优惠</span></div>
-                <div>1<span>企业解决方案优惠</span></div>
-                <div>1<span>企业解决方案优惠</span></div>   
+                <div class="iconfont">&#xe773;<span>企业解决方案优惠</span></div>
+                <div class="iconfont icf1">&#xe642;
+                  <span class="icf1">企业解决方案优惠</span></div>
+                <div class="iconfont ">&#xe773;<span class="icf1">企业解决方案优惠</span></div>   
               </li>
               <li class="Li-4">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="https://media.hpstore.cn/wysiwyg/CN_OLS/menu/public_menu/business/0306zhan66.jpg" alt="">
+                <img src="https://media.hpstore.cn/wysiwyg/CN_OLS/menu/public_menu/business/zhan99_0718.jpg" alt="">
+              </li>
+          </ul>
+       </div>
+       <div style="height: 300px; background: #f2f2f2;
+       " id="divList"  class="DivList-0 divList">
+          <ul style="width: 1280px; height: 100%; ">
+              <li class="Li-1">
+                <a href="">按用途选择</a>
+                <ul>
+                  <li>商务笔记本及平板</li>
+                  <li>商务笔记本及平板</li>
+                  <li>商务笔记本及平板</li>
+                  <li>商务笔记本及平板</li>
+                  <li>商务笔记本及平板</li>
+                </ul>
+              </li>
+              <li class="Li-2">
+                <ul>
+                <a href="">按系列选择</a>
+                  <span>笔记本/移动工作站</span>
+                  <li>HP达人系列笔记本</li>
+                  <li>HP达人系列笔记本</li>
+                  <li>HP达人系列笔记本</li>
+                  <li>HP达人系列笔记本</li>
+                </ul>
+                <ul>
+                  <span id="a1">桌面 / AiO / 工作站</span>
+                  <li>笔记本/移动工作站</li>
+                  <li>HP达人系列笔记本</li>
+                </ul>
+              </li>
+              <li class="Li-3">
+                <div class="iconfont">&#xe773;<span>企业解决方案优惠</span></div>
+                <div class="iconfont icf1">&#xe642;
+                  <span class="icf1">企业解决方案优惠</span></div>
+                <div class="iconfont ">&#xe773;<span class="icf1">企业解决方案优惠</span></div>   
+              </li>
+              <li class="Li-4">
+                <img src="https://media.hpstore.cn/wysiwyg/CN_OLS/menu/public_menu/business/0306zhan66.jpg" alt="">
+                <img src="https://media.hpstore.cn/wysiwyg/CN_OLS/menu/public_menu/business/zhan99_0718.jpg" alt="">
+              </li>
+          </ul>
+       </div>
+       <div style="height: 300px; background: #f2f2f2;
+       " id="divList" class="DivList-1 divList">
+          <ul style="width: 1280px; height: 100%; ">
+              <li class="Li-1">
+                <a href="">按用途选择</a>
+                <ul>
+                  <li>商务笔记本及平板</li>
+                  <li>商务笔记本及平板</li>
+                  <li>商务笔记本及平板</li>
+                  <li>商务笔记本及平板</li>
+                  <li>商务笔记本及平板</li>
+                </ul>
+              </li>
+              <li class="Li-2">
+                <ul>
+                <a href="">按系列选择</a>
+                  <span>笔记本/移动工作站</span>
+                  <li>HP达人系列笔记本</li>
+                  <li>HP达人系列笔记本</li>
+                  <li>HP达人系列笔记本</li>
+                  <li>HP达人系列笔记本</li>
+                </ul>
+                <ul>
+                  <span id="a1">桌面 / AiO / 工作站</span>
+                  <li>笔记本/移动工作站</li>
+                  <li>HP达人系列笔记本</li>
+                </ul>
+              </li>
+              <li class="Li-3">
+                <div class="iconfont">&#xe773;<span>企业解决方案优惠</span></div>
+                <div class="iconfont icf1">&#xe642;
+                  <span class="icf1">企业解决方案优惠</span></div>
+                <div class="iconfont ">&#xe773;<span class="icf1">企业解决方案优惠</span></div>   
+              </li>
+              <li class="Li-4">
+                <img src="https://media.hpstore.cn/wysiwyg/CN_OLS/menu/public_menu/business/0306zhan66.jpg" alt="">
+                <img src="https://media.hpstore.cn/wysiwyg/CN_OLS/menu/public_menu/business/zhan99_0718.jpg" alt="">
               </li>
           </ul>
        </div>
