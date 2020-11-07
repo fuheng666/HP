@@ -5,9 +5,16 @@ define(['jquery'], function($){
       var oUl = $(".play").find("ul");
       var left=$('#FLeft')
       var right=$('#FRight')
+
+      var play=$('#play')
+      var oLi = $(".play").find("ul li");
+      var img = $(".play").find("ul li img");
+
       var iNow = 1;
       var timer = null;
-      clearInterval(timer)
+      var w= $(window).width()
+      clearInterval(timer);
+      console.log(w)
     left.click(function(){
      if(iNow>0){
       iNow--;
@@ -59,19 +66,21 @@ define(['jquery'], function($){
 
         oUl.stop(true).animate(
           {
-            left: iNow * -1920,
+            left: iNow * -1903,
           },
           2000,
           function () {
             //判断是否是最后一张图片
             if (iNow === 12) {
               iNow = 1;
-              oUl.css("left", -1920);
+              oUl.css("left", -1903);
             }
           }
         );
       }
+      
     });
+   
   }
   return {
     banner

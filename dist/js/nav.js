@@ -1,34 +1,31 @@
 define(['jquery'],function(){
-        console.log('nav加载成功')
+
         var triangle=$('.triangle')
         var divList=$('.divList')
+        var li=$('.divList').find('ul li')
         var a=$('.level0')
+        var sp=$('.level0').find('a span')
+    
         function pull(){
-            console.log(a)
+         
            a.on('mouseenter',function(){
                var a =$(this).index()
-               divList.eq(a).css('display','flex')
-               triangle.eq(a).css('display','block')
+               divList.css('display','none').eq(a).css('display','flex')
+               triangle.css('display','none').eq(a).css('display','block')
+               sp.eq(a).css('color','#0199d5')
+           }).on('mouseleave',function(){
+                sp.css('color','')
            })
-           divList.on('mouseenter',function(){
-            var a =$(this).index()
-            divList.eq(a).css('display','flex')
-            triangle.eq(a).css('display','block')
-        })
-        
-        divList.on('mouseleave',function(){
-            var a =$(this).index()
-            divList.eq(a).css('display','none')
-            triangle.eq(a).css('display','none')
-        })
-        a.on('mouseleave',function(){
-            var a =$(this).index()
-            divList.eq(a).css('display','none')
-            triangle.eq(a).css('display','none')
-        })
+           
+                divList.on('mouseenter',function(){
+                    divList.eq(a).css('display','block')
+                    triangle.eq(a).css('display','block')
+                }).on('mouseleave',function(){
+                    divList.css('display','none')
+                    triangle.css('display','none')
+                })
+
         }
-      
-        console.log(divList)
         return{
             pull
         }

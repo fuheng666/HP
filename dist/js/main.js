@@ -1,4 +1,4 @@
-console.log("加载成功");
+
 /*
   配置要引入的模块的路径 jquery也遵从AMD规范
 */
@@ -9,7 +9,8 @@ require.config({
     parabola: "parabola",
     index: "index",
     banner: "banner",
-    nav:'nav'
+    nav:'nav',
+    dataLoading:'dataLoading'
   },
   //jquery-cookie 是依赖于jquery开发
   shim: {
@@ -26,7 +27,7 @@ require.config({
 /*
   好处：模块和模块之间的关系清晰，所以的代码的，其中一个模块有问题，其他代码不受影响。
 */
-require(["index", "banner",'nav'], function(index, banner,nav){
+require(["index", "banner",'nav','dataLoading'], function(index, banner,nav,dataLoading){
   index.download();
   index.sc_btnClick();
   index.Remove();
@@ -34,4 +35,5 @@ require(["index", "banner",'nav'], function(index, banner,nav){
   index.Clicked()
   banner.banner();
   nav.pull();
+  dataLoading.data1();
 })

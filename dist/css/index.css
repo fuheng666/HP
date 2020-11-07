@@ -178,6 +178,8 @@ a {
                 letter-spacing: 0.6px;
                 color: #575757;
                 line-height: 50px; }
+            .page-header .content .sections.nav-sections .section-items .section-item-content #ui-id-1 .level0 .level-top:hover {
+              color: #0199d5; }
   .page-header .header-right {
     position: relative; }
     .page-header .header-right .phone_text {
@@ -242,26 +244,26 @@ a {
 
 #play {
   overflow: hidden;
-  width: 1920px;
-  height: 694px;
+  width: 1903px;
+  min-height: 694px;
   position: relative;
   top: 105px; }
   #play ul {
     width: 1300%;
-    height: 100%;
+    min-height: 100%;
     position: absolute;
-    left: -1920px; }
+    left: -1903px; }
     #play ul li {
-      width: 1920px;
-      height: 694px;
+      width: 1903px;
+      height: 100%;
       float: left;
       display: flex;
       justify-content: center;
       align-items: center; }
       #play ul li img {
         float: left;
-        width: 1920px;
-        height: 694px; }
+        width: 1903px;
+        min-height: 694px; }
   #play .box {
     width: 100%;
     height: 40px;
@@ -392,5 +394,167 @@ a {
   align-items: center;
   display: none; }
 
+.divList ul li ul li:hover {
+  color: #0199d5; }
+
 .div0 {
   display: none; }
+
+.showimg ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .service .serviceMid {
+    width: 1280px;
+    margin-top: 10px;
+    margin-bottom: 30px !important;
+    overflow: hidden; }
+    .service .serviceMid ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .service .serviceMid ul li {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        .service .serviceMid ul li img {
+          max-width: 77px;
+          height: auto; }
+        .service .serviceMid ul li h4 {
+          font-size: 2.2rem;
+          font-weight: 600;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          color: #2e2e2e; }
+
+.BigBlock {
+  width: 100%;
+  background-color: #f6f6f6; }
+  .BigBlock .tie {
+    position: inherit;
+    max-width: 1412px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-size: 4rem;
+    color: #000; }
+  .BigBlock .content {
+    margin: auto;
+    width: 1412px; }
+    .BigBlock .content ul {
+      display: flex; }
+      .BigBlock .content ul .li-2 {
+        width: 245px; }
+        .BigBlock .content ul .li-2 .idv {
+          height: 25px; }
+          .BigBlock .content ul .li-2 .idv span {
+            width: 115px;
+            display: inline-block;
+            text-align: center;
+            line-height: 16px;
+            color: #fff; }
+          .BigBlock .content ul .li-2 .idv .s1 {
+            background-color: #822980; }
+          .BigBlock .content ul .li-2 .idv .s2 {
+            background-color: #00b04f; }
+        .BigBlock .content ul .li-2 .idv1 {
+          padding: 20px; }
+        .BigBlock .content ul .li-2 .idv2 {
+          padding: 0 20px;
+          margin: 10px 0; }
+          .BigBlock .content ul .li-2 .idv2 ul {
+            display: flex;
+            flex-direction: column; }
+          .BigBlock .content ul .li-2 .idv2 p {
+            text-align: left;
+            font-size: 1.8rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+          .BigBlock .content ul .li-2 .idv2 li {
+            width: 205px;
+            text-indent: 0;
+            list-style-type: none;
+            text-align: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 1.4rem;
+            font-weight: 600; }
+          .BigBlock .content ul .li-2 .idv2 li:before {
+            content: '-';
+            margin-right: 10px; }
+          .BigBlock .content ul .li-2 .idv2 main {
+            color: #ff0909;
+            height: 15px;
+            font-size: 13px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin-top: 11px; }
+        .BigBlock .content ul .li-2 .p0 {
+          font-size: 12px !important;
+          border-top: 1px solid #e0e1e4; }
+        .BigBlock .content ul .li-2 .p1 {
+          font-size: 17px;
+          height: 35px; }
+        .BigBlock .content ul .li-2 .p2 {
+          height: 20px;
+          color: #ff0909 !important;
+          font-size: 14px !important;
+          margin-bottom: 5px; }
+          .BigBlock .content ul .li-2 .p2 span {
+            color: #7d7d7d !important; }
+        .BigBlock .content ul .li-2 .idv2 > div {
+          width: 100%;
+          height: 200px; }
+        .BigBlock .content ul .li-2 .idv2 > section {
+          height: 205px; }
+          .BigBlock .content ul .li-2 .idv2 > section img {
+            width: 35px;
+            height: 35px; }
+          .BigBlock .content ul .li-2 .idv2 > section .p3 {
+            line-height: 1.2;
+            color: #ff0909;
+            font-size: 13px;
+            height: 29px; }
+          .BigBlock .content ul .li-2 .idv2 > section button {
+            width: 100%;
+            height: 40px;
+            color: #fff;
+            background: #0199d5;
+            transition: all .5s;
+            border: 1px solid #0199d5;
+            font-family: 'HP Simplified Regular';
+            letter-spacing: 0px;
+            font-weight: 500;
+            text-transform: capitalize;
+            font-size: 1.4rem;
+            border-radius: 3px;
+            outline: 0;
+            cursor: pointer; }
+          .BigBlock .content ul .li-2 .idv2 > section button:hover {
+            color: #fff;
+            background: #069;
+            transition: all .5s;
+            border: 1px solid #0199d5;
+            font-family: 'HP Simplified Regular'; }
+          .BigBlock .content ul .li-2 .idv2 > section .p5 {
+            font-size: 1.2rem;
+            margin: 15px 0 0 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center; }
+            .BigBlock .content ul .li-2 .idv2 > section .p5 input {
+              width: 20px;
+              height: 20px;
+              margin-top: 5px; }
