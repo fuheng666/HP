@@ -476,8 +476,10 @@ a {
   .content{
     margin: auto;
     width: 1412px;
-    ul{
+   
+    ul,ol{
       display: flex;
+     
         .li-2{
           width: 245px;
           .idv{
@@ -506,7 +508,7 @@ a {
             ul{
              display: flex;
              flex-direction: column;
-           
+            
             }
             p{
               text-align: left;
@@ -615,5 +617,16 @@ a {
         
       }
     }
+  }
+}
+.SDiv{
+   
+  p{
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #000;
+    clear: both;
+    position: inherit;
+    width: 100%;
   }
 }
