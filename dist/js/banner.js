@@ -82,7 +82,65 @@ define(['jquery'], function($){
     });
    
   }
+  function SImg(){
+      var Img = $('.SDiv ul').find('li')
+      var SList=$('.SDiv ol').find('li')
+      var Indow=1
+      var Dow=0
+      var timer =null
+      SList.on('click',function(){
+        Indow = $(this).index()
+      })
+      SList.mouseenter(function(){
+        clearInterval(timer)
+      }).mouseleave(function(){
+        timer=setInterval(() => {
+          Indow++;
+          Dow++;
+          
+          if(Indow>3 && Dow>2){
+            Indow=1
+            Dow=0
+          }
+          Img.stop(true).animate({opacity:'0'}).eq(Dow).animate({opacity:'1'})
+          SList.stop(true).animate({opacity:'.6'}).eq(Dow).animate({opacity:'1'})
+          Img.css('z-index','').eq(Dow).css('z-index',Indow)
+        }, 3000);
+  
+      })
+      clearInterval(timer)
+      timer=setInterval(() => {
+        Indow++;
+        Dow++;
+        
+        if(Indow>3 && Dow>2){
+          Indow=1
+          Dow=0
+        }
+        Img.stop(true).animate({opacity:'0'}).eq(Dow).animate({opacity:'1'})
+        SList.stop(true).animate({opacity:'.6'}).eq(Dow).animate({opacity:'1'})
+        Img.css('z-index','').eq(Dow).css('z-index',Indow)
+      }, 3000);
+
+      Img.mouseenter(function(){
+        clearInterval(timer)
+      }).mouseleave(function(){
+        timer=setInterval(() => {
+          Indow++;
+          Dow++;
+          
+          if(Indow>3 && Dow>2){
+            Indow=1
+            Dow=0
+          }
+          Img.stop(true).animate({opacity:'0'}).eq(Dow).animate({opacity:'1'})
+          SList.stop(true).animate({opacity:'.6'}).eq(Dow).animate({opacity:'1'})
+          Img.css('z-index','').eq(Dow).css('z-index',Indow)
+        }, 3000);
+      })
+  }
   return {
-    banner
+    banner,
+    SImg
   }
 })

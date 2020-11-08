@@ -34,6 +34,7 @@ require(["index", "banner",'nav','dataLoading'], function(index, banner,nav,data
   index.Mouseout();
   index.Clicked()
   banner.banner();
+  banner.SImg();
   nav.pull();
   dataLoading.data1();
 })

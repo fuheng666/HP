@@ -1,11 +1,11 @@
 define(['jquery','jquery-cookie'],function($){
     function data1(){
-        console.log('data加载成功')
+      
         $.ajax({
             type: 'get',
             url:"../data/data.json",
             success: function(arr){
-                  console.log(arr)
+                
                   // 0
                   var str=``
                   var str1=``
