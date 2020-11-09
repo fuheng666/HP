@@ -23,7 +23,7 @@ require.config({
   /*
     好处：模块和模块之间的关系清晰，所以的代码的，其中一个模块有问题，其他代码不受影响。
   */
-  require(['nav'], function(trade,banner,nav){
+  require(['nav'], function(nav){
     nav.pull();
   })
   
