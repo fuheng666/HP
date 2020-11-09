@@ -518,9 +518,10 @@ a {
       color: #2e2e2e; }
 
 .columns {
+  float: left;
   margin-left: auto;
   margin-right: auto;
-  min-width: 1280px;
+  max-width: 1280px;
   padding-left: 20px;
   padding-right: 20px; }
   .columns .column {
@@ -534,7 +535,8 @@ a {
     float: left;
     -ms-flex-order: 1;
     -webkit-order: 1;
-    order: 1; }
+    order: 1;
+    padding-right: 40px; }
     .columns .sidebar strong {
       padding-top: 5px;
       display: block;
@@ -549,3 +551,236 @@ a {
       vertical-align: middle;
       font-family: 'HP Simplified Light';
       color: #000; }
+    .columns .sidebar dl dt {
+      color: #424242;
+      padding: 15px 0 5px;
+      font-weight: 400;
+      text-transform: capitalize;
+      font-family: 'HP Simplified Light';
+      overflow: hidden; }
+      .columns .sidebar dl dt i {
+        float: right; }
+    .columns .sidebar dl dd {
+      border-bottom: 1px solid #ccc; }
+      .columns .sidebar dl dd [type="range"] {
+        width: 100%;
+        background: #dadada;
+        height: 10px; }
+    .columns .sidebar dl .div-span {
+      font-size: 1.2rem;
+      color: #5a5a5a;
+      overflow: hidden; }
+      .columns .sidebar dl .div-span .div-sp1 {
+        float: left; }
+      .columns .sidebar dl .div-span .div-sp2 {
+        float: right; }
+    .columns .sidebar dl .div-span1 {
+      overflow: hidden;
+      margin-left: -5px;
+      margin-right: -5px;
+      margin-bottom: 5px;
+      margin-top: 5px; }
+      .columns .sidebar dl .div-span1 button {
+        float: right;
+        font-family: 'HP Simplified Regular';
+        color: #fff;
+        border: 1px solid #0199d5;
+        background: #0199d5;
+        font-weight: 400;
+        padding: 8px 15px;
+        font-size: 1.2rem;
+        vertical-align: middle;
+        border-radius: 3px;
+        border: none; }
+      .columns .sidebar dl .div-span1 button:hover {
+        color: #000;
+        border: 1px solid #000;
+        background: #fff;
+        transition: all .5s;
+        font-size: 1.2rem; }
+
+.dd-1 {
+  font-size: 1.2rem;
+  font-weight: 400; }
+
+.dd-2 {
+  color: #424242;
+  padding: 15px 0 5px;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-family: 'HP Simplified Light';
+  padding-left: 20px;
+  overflow: hidden; }
+  .dd-2 i {
+    float: right; }
+
+.column {
+  overflow: hidden; }
+  .column h1 {
+    font-family: 'HP Simplified Light';
+    font-weight: 500;
+    font-size: 3.2rem;
+    letter-spacing: .2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #000; }
+  .column .column-ul {
+    width: 100%; }
+    .column .column-ul li {
+      position: relative;
+      float: left;
+      width: 20%;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border: 1px solid #dadada; }
+    .column .column-ul div {
+      float: left;
+      margin-bottom: 7px;
+      position: static;
+      right: 0;
+      margin-top: 18px;
+      font-size: 1rem; }
+      .column .column-ul div span {
+        font-size: 1.1rem;
+        color: #000; }
+      .column .column-ul div select {
+        max-width: 102px;
+        color: #000;
+        font-size: 1.1rem;
+        border: none;
+        background: 0 0;
+        box-shadow: none;
+        font-family: 'HP Simplified Light'; }
+
+.column-li::after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background: #000;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%); }
+
+.column ol {
+  float: left;
+  width: 100%; }
+  .column ol .li-2 {
+    width: 33% !important;
+    background: #f4f4f4;
+    padding: 20px !important;
+    margin-left: 0px !important;
+    float: left; }
+    .column ol .li-2 .idv {
+      height: 25px; }
+      .column ol .li-2 .idv span {
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+        line-height: 16px;
+        color: #fff; }
+      .column ol .li-2 .idv .s1 {
+        background-color: #822980; }
+      .column ol .li-2 .idv .s2 {
+        background-color: #00b04f; }
+    .column ol .li-2 .idv1 {
+      bottom: 0;
+      display: block;
+      height: auto;
+      margin: auto;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto; }
+    .column ol .li-2 .idv2 {
+      padding: 0 20px;
+      margin: 10px 0; }
+      .column ol .li-2 .idv2 ul {
+        display: flex;
+        flex-direction: column; }
+      .column ol .li-2 .idv2 p {
+        text-align: left;
+        font-size: 1.8rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .column ol .li-2 .idv2 li {
+        width: 100%;
+        text-indent: 0;
+        list-style-type: none;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 1.4rem;
+        font-weight: 600; }
+      .column ol .li-2 .idv2 li:before {
+        content: '-';
+        margin-right: 10px; }
+      .column ol .li-2 .idv2 main {
+        color: #ff0909;
+        height: 15px;
+        font-size: 13px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-top: 11px; }
+    .column ol .li-2 .p0 {
+      font-size: 12px !important;
+      border-top: 1px solid #e0e1e4; }
+    .column ol .li-2 .p1 {
+      font-size: 17px;
+      height: 35px; }
+    .column ol .li-2 .p2 {
+      height: 20px;
+      color: #ff0909 !important;
+      font-size: 14px !important;
+      margin-bottom: 5px; }
+      .column ol .li-2 .p2 span {
+        color: #7d7d7d !important; }
+    .column ol .li-2 .idv2 > div {
+      width: 100%;
+      height: 200px; }
+    .column ol .li-2 .idv2 > section {
+      height: 205px; }
+      .column ol .li-2 .idv2 > section img {
+        width: 35px;
+        height: 35px; }
+      .column ol .li-2 .idv2 > section .p3 {
+        line-height: 1.2;
+        color: #ff0909;
+        font-size: 13px;
+        height: 29px; }
+      .column ol .li-2 .idv2 > section button {
+        width: 100%;
+        height: 40px;
+        color: #fff;
+        background: #0199d5;
+        transition: all .5s;
+        border: 1px solid #0199d5;
+        font-family: 'HP Simplified Regular';
+        letter-spacing: 0px;
+        font-weight: 500;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        border-radius: 3px;
+        outline: 0;
+        cursor: pointer; }
+      .column ol .li-2 .idv2 > section button:hover {
+        color: #fff;
+        background: #069;
+        transition: all .5s;
+        border: 1px solid #0199d5;
+        font-family: 'HP Simplified Regular'; }
+      .column ol .li-2 .idv2 > section .p5 {
+        font-size: 1.2rem;
+        margin: 10px 0 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        .column ol .li-2 .idv2 > section .p5 input {
+          width: 20px;
+          height: 20px; }

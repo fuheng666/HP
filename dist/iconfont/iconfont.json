@@ -27,6 +27,13 @@
       "unicode_decimal": 58968
     },
     {
+      "icon_id": "1141877",
+      "name": "收起三角",
+      "font_class": "xialasanjiao-copy",
+      "unicode": "e7cf",
+      "unicode_decimal": 59343
+    },
+    {
       "icon_id": "4294026",
       "name": "优惠",
       "font_class": "youhui",
@@ -46,6 +53,13 @@
       "font_class": "zhanghu",
       "unicode": "e610",
       "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "7738181",
+      "name": "三角形",
+      "font_class": "sanjiaoxing",
+      "unicode": "e609",
+      "unicode_decimal": 58889
     },
     {
       "icon_id": "9626836",

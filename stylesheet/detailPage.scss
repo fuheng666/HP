@@ -556,4 +556,128 @@ a {
 //中间
 .Fcontent{
     margin-top:105px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+.FContent-ul{
+  overflow: hidden;
+  margin: 15px 0;
+  li{
+    float: left;
+    color: #c6c6c6;
+    font-size: 14px;
+  }
+  .FContent-li{
+    color: #000;
+  }
+}
+.columns{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+.product-info-main{
+    position: relative;
+    left: -1px;
+    border-color: #d6d6d6;
+    margin-bottom: 10px;
+    box-sizing: content-box !important;
+    width: 47%;
+    padding-left: calc(3% - 5px);
+    border-left: 1px solid transparent;
+    float: right;
+}
+.product{
+  border-color: transparent;
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  float: left;
+  margin-bottom: 10px;
+  border-right: 1px solid #d6d6d6;
+  margin-top: 10px;
+  padding-top: 5px;
+}
+.product-view-choose{
+  border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    select{
+      width: 100%;
+    height: 45px;
+    cursor: pointer;
+    padding-left: 20px;
+    font-family: 'HP Simplified Regular';
+    font-size: 1.5rem;
+    color: #424242;
+    border: none !important;
+    border-bottom: 1px solid #d5d5d5 !important;
+    border-radius: 5px;
+    }
+    .product-view-ul{
+      padding-left: 10px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      li{
+        text-align: center;
+        width: calc(20% - 1px);
+        height: 100px;
+        overflow: hidden;
+      }
+      li span{
+        display: block;
+        padding: 5px 7px 0;
+        overflow: hidden;
+        font-size: 1.2rem;
+        color: #757575;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        line-height: 12px;
+      }
+    }
+}
+.product-view-choose-color{
+  label{
+    cursor: default;
+  }
+  .product-view-choose-item-list{
+    padding: 5px 5px 5px 0;
+    border: 1px solid transparent;
+    .list{
+      margin-right: 0;
+      a{
+        border-style: solid;
+        display: block;
+        width: 42px;
+        height: 42px;
+        border: 2px solid #56bae4;
+        border-radius: 5px;
+        font-size: 0rem;
+      }
+    }
+  }
+}
+.product-info-price{
+  .product-info-sp1{
+    font-size: 1.5rem;
+    color: #424242;
+    margin-right: 15px;
+  }
+  .product-info-sp2{
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: #000;
+  }
 }
