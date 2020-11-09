@@ -20,6 +20,13 @@
       "unicode_decimal": 58915
     },
     {
+      "icon_id": "925498",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
       "icon_id": "4294026",
       "name": "优惠",
       "font_class": "youhui",
@@ -39,6 +46,13 @@
       "font_class": "zhanghu",
       "unicode": "e610",
       "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "9626836",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e866",
+      "unicode_decimal": 59494
     },
     {
       "icon_id": "9962711",
@@ -67,6 +81,13 @@
       "font_class": "gouwuche",
       "unicode": "e652",
       "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "11756547",
+      "name": "甲虫",
+      "font_class": "V",
+      "unicode": "e730",
+      "unicode_decimal": 59184
     }
   ]
 }
