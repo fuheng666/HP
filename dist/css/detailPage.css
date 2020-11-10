@@ -800,5 +800,130 @@ a {
   color: #5a5a5a;
   text-align: center; }
 
-.Fotorama__div div img {
-  width: 88px; }
+.Fotorama__div {
+  white-space: nowrap;
+  height: 86px;
+  width: 792px;
+  transition-duration: 550ms;
+  transform: translate3d(0px, 0px, 0px); }
+  .Fotorama__div div {
+    float: left;
+    width: 88px;
+    border: 1px solid #c6c6c6;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right: -1px;
+    padding-left: 0 !important; }
+    .Fotorama__div div img {
+      width: 100%;
+      height: 100%; }
+
+.Fproduct {
+  width: 1280px !important;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; }
+  .Fproduct a {
+    min-width: calc(14.3% + 0.8px) !important;
+    width: calc(14.3% + 0.8px) !important;
+    display: block;
+    font-size: 1.5rem;
+    padding: 9px 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #424242;
+    height: 70px;
+    white-space: nowrap;
+    float: left;
+    line-height: 50px;
+    text-align: center; }
+
+.tabpanelImg img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  max-width: 100%; }
+
+.product-desc-features {
+  margin-left: -5px;
+  padding-left: 10px;
+  font-family: 'HP Simplified Light';
+  color: #000; }
+  .product-desc-features ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 20px; }
+    .product-desc-features ul li {
+      list-style-type: disc;
+      line-height: 15px;
+      margin-bottom: 5px; }
+
+.product-desc-feature-icons ul {
+  text-align: center; }
+  .product-desc-feature-icons ul .product-desc-li1 {
+    border: 0; }
+
+.product-desc-feature-icons ul li {
+  height: 102px;
+  margin-right: 0;
+  padding: 0 30px;
+  overflow: hidden;
+  width: 234px;
+  line-height: normal;
+  margin-bottom: 10px;
+  border-right: 1px solid #e2e2e2;
+  display: inline-block; }
+  .product-desc-feature-icons ul li span {
+    display: block; }
+
+.you-might-like {
+  width: 1280px  !important;
+  margin-left: auto;
+  margin-right: auto; }
+  .you-might-like .consider {
+    font-size: 2.2rem;
+    font-weight: 300;
+    font-family: 'HP Simplified Light';
+    color: #424242; }
+
+.block-content ol li {
+  width: auto;
+  display: inline-block;
+  width: calc(20% - 2px);
+  margin-right: 2px;
+  padding-left: 0;
+  margin-bottom: 25px; }
+  .block-content ol li img {
+    width: 221px;
+    text-align: center; }
+  .block-content ol li h2 {
+    display: block;
+    padding: 0 10px;
+    text-align: center;
+    color: #333;
+    height: 50px;
+    overflow: hidden;
+    font-size: 1.8rem;
+    font-family: 'HP Simplified Light';
+    font-weight: 700;
+    letter-spacing: 0;
+    box-sizing: content-box !important;
+    line-height: 25px;
+    font-size: 1.6rem;
+    font-family: 'HP Simplified Regular';
+    text-align: center;
+    margin-bottom: 10px;
+    height: 50px;
+    max-height: 50px;
+    line-height: 25px; }
+  .block-content ol li p {
+    color: #ff0909;
+    height: 15px;
+    overflow: hidden;
+    font-size: 13px;
+    text-align: center; }
+  .block-content ol li p:last-of-type {
+    margin: 10px 0 35px;
+    color: #000;
+    font-weight: 700; }

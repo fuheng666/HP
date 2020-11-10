@@ -556,4 +556,202 @@ a {
 //中间
 .Fcontent{
     margin-top:105px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    ul{
+      font-size: 1.2rem;
+      color: #a3a3a3;
+      margin: 0;
+      padding: 0;
+      list-style: none none;
+      li{
+       display: inline-block;
+      }
+     
+    }
+}
+.breadcrumbs{
+  color: #000 !important;
+  font-size: 14px !important;
+  margin: 10px 0;
+}
+.breadcrumbs-1{
+  margin: 0 5px;
+  color: #c6c6c6;
+  line-height: 12px;
+}
+.login-container{
+  border-bottom: 0px solid transparent;
+}
+.block-customer-login{
+    min-height: 540px;
+    margin-right: 2%;
+    padding: 40px 10px 0 30px;
+    box-sizing: border-box;
+    border: 2px solid #d6d6d6;
+    clear: left;
+    float: left;
+    width: 32%;
+    margin-bottom: 50px;
+    strong{
+      font-family: 'HP Simplified Light';
+      font-size: 2.6rem;
+      color: #000;
+      font-weight: 400;
+    margin-bottom: 10px;
+    }
+    div{
+      margin: 5px 0 10px;
+      input{
+        height: 46px;
+        padding: 0 20px;
+        background: #fbfbfb;
+        border: 2px solid #c2c2c2;
+        border-radius: 3px;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: #767676;
+        width: 100%;
+      }
+    }
+    .primary{
+      width: 100%;
+      margin-left: 0;
+      button{
+        min-width: 100%;
+        padding: 0 15px;
+        margin-right: 0;
+        font-size: 2rem;
+        height: 46px;
+        line-height: 50px;
+        font-weight: 700;
+        margin-left: 0;
+        border-radius: 0 6px;
+        color: #fff;
+        border: 1px solid #0199d5;
+        background: #0199d5;
+        transition: all .5s;
+      }
+      button:hover{
+        background: #fff;
+        border: 1px solid #000;
+        color: #000;
+      }
+      div{
+        color:#0199d5 ;
+        text-decoration: underline;
+      }
+    
+    }
+    section{
+      text-transform: uppercase;
+    font-size: 1.4rem;
+    color: #000;
+    margin-bottom: 10px;
+    }
+}
+.social-login-ico{
+  img{
+    float: left;
+    margin-right: 10px;
+    max-height: 66px;
+  }
+}
+.block-new-customer{
+  border-left: 1px solid #000;
+  float: left;
+  min-height: 540px;
+  box-sizing: border-box;
+  border: 2px solid #d6d6d6;
+  width: 66%;
+  padding: 40px 30px 25px 40px;
+}
+.block-panel{
+      float: left;
+      width: 50%;
+      min-height: 470px;
+      box-sizing: border-box;
+}
+.block-title{
+  font-family: 'HP Simplified Light';
+    font-size: 2.6rem;
+    color: #000;
+    strong{
+      display: block;
+      margin-bottom: 20px;
+    }
+    p{
+      color: #757678;
+      font-size: 2.2rem;
+    }
+}
+.actions-toolbar>div{
+  margin-top: 8px;
+  display: inline-block;
+  text-align: center;
+  float: left;
+}
+
+.actions-toolbar{
+  overflow: hidden;
+  a{
+    display: block;
+    min-width: 125px;
+    padding: 9px 15px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    height: 46px;
+    line-height: 46px;
+    padding-top: 0 !important;
+    border-radius: 0 6px;
+    margin-bottom: 0;
+    margin-right: 15px;
+    color: #fff;
+    border: 1px solid #0199d5;
+    background: #0199d5;
+    transition: all .5s;
+    span{
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+  }
+}
+.block-panel{
+  padding-right: 20px;
+}
+.block-content{
+ 
+  ul{
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    li{
+      position: relative;
+      dl{
+        margin-bottom: 20px;
+        margin-top: 0;
+        dt{
+          color: #000;
+          font-size: 2.6rem;
+          font-weight: 400;
+          margin-bottom: 10px;
+        }
+        dd{
+          color: #757678;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+.value-proposition{
+  padding-left: 25px;
+  border-left: 2px solid #c2c2c2;
+}
+.primary>div{
+  font-style: oblique;
 }

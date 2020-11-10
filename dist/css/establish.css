@@ -66,13 +66,6 @@ a {
   text-decoration: none;
   color: #5a5a5a; }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none; }
-
-input[type="number"] {
-  -moz-appearance: textfield; }
-
 /*header*/
 .floating {
   top: 0;
@@ -249,16 +242,12 @@ input[type="number"] {
   margin: 0 5px;
   cursor: pointer; }
 
-.divList a,
-ul a,
-Li-1 a {
+.divList a, ul a, Li-1 a {
   font-size: 16px;
   color: #000;
   display: block; }
 
-.divList ul li,
-ul ul li,
-Li-1 ul li {
+.divList ul li, ul ul li, Li-1 ul li {
   font-size: 14px;
   color: #777;
   line-height: 25px; }
@@ -435,7 +424,7 @@ Li-1 ul li {
       line-height: 20px; }
     .footer-top-right .footer-top-right-div ul {
       overflow: hidden;
-      margin: 10px 0 !important;
+      margin: 10px 0  !important;
       width: 100%; }
     .footer-top-right .footer-top-right-div ul li {
       background: #fff;
@@ -444,8 +433,7 @@ Li-1 ul li {
       float: left;
       margin: 0 !important;
       margin-left: 10px !important; }
-    .footer-top-right .footer-top-right-div strong,
-    .footer-top-right .footer-top-right-div span {
+    .footer-top-right .footer-top-right-div strong, .footer-top-right .footer-top-right-div span {
       font-size: 1.4rem;
       color: #666;
       vertical-align: top;
@@ -459,7 +447,7 @@ Li-1 ul li {
         background-clip: padding-box;
         border: 1px solid #c2c2c2;
         border-radius: 1px;
-        font-family: "HP Simplified Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: 'HP Simplified Light','Helvetica Neue',Helvetica,Arial,sans-serif;
         padding: 0 9px;
         vertical-align: baseline;
         width: 100%; }
@@ -490,19 +478,16 @@ Li-1 ul li {
   margin-top: auto;
   display: inline-block;
   width: 100%; }
-  .footer-disclaimer p,
-  .footer-disclaimer div {
+  .footer-disclaimer p, .footer-disclaimer div {
     max-width: 1240px;
     margin-left: auto;
     margin-right: auto;
     color: #666;
     margin-top: 10px;
     font-size: 1.3rem; }
-    .footer-disclaimer p a,
-    .footer-disclaimer div a {
+    .footer-disclaimer p a, .footer-disclaimer div a {
       color: #0199d5; }
-    .footer-disclaimer p img,
-    .footer-disclaimer div img {
+    .footer-disclaimer p img, .footer-disclaimer div img {
       margin: 0; }
   .footer-disclaimer span {
     max-width: 1240px;
@@ -521,254 +506,28 @@ Li-1 ul li {
   padding-left: 20px;
   padding-right: 20px;
   width: 100%; }
-  .Fcontent .Fcontent-ul {
-    font-size: 1.3rem;
+  .Fcontent ul {
+    font-size: 1.2rem;
     color: #a3a3a3;
     margin: 0;
     padding: 0;
-    list-style: none none;
-    margin: 15px 0; }
-    .Fcontent .Fcontent-ul li {
+    list-style: none none; }
+    .Fcontent ul li {
       display: inline-block; }
-    .Fcontent .Fcontent-ul .Fcontent-li1 {
-      color: #000;
-      font-size: 16px; }
 
-.page-main {
-  padding-left: 15px;
-  padding-right: 15px; }
-  .page-main h1 {
-    font-size: 3.3rem;
-    font-weight: 500;
-    color: #000;
-    font-family: 'HP Simplified Light'; }
+.breadcrumbs {
+  color: #000 !important;
+  font-size: 14px !important;
+  margin: 10px 0; }
 
-.reward-checkout {
-  margin: 10px 0 10px;
-  padding: 12px 20px 12px 25px;
-  display: block;
-  font-size: 1.3rem;
-  background: #fdf0d5;
-  color: #6f4400;
-  padding-left: 45px;
-  position: relative; }
+.breadcrumbs-1 {
+  margin: 0 5px;
+  color: #c6c6c6;
+  line-height: 12px; }
 
-.deliver-options-box {
-  background: #f9f9f9;
-  float: left;
-  clear: left;
-  text-align: left;
-  padding: 25px 35px 0;
-  position: relative;
-  margin-top: 20px;
-  box-sizing: border-box;
-  display: table;
-  width: 71%; }
-  .deliver-options-box form {
-    width: 71%; }
-    .deliver-options-box form table {
-      min-width: 100%;
-      width: 100%;
-      border-collapse: inherit; }
-      .deliver-options-box form table tbody {
-        display: table-row-group;
-        vertical-align: middle;
-        border-color: inherit;
-        border-collapse: inherit;
-        margin-top: 10px;
-        border: 1px solid #000; }
-        .deliver-options-box form table tbody tr {
-          background: #f9f9f9;
-          display: table-row;
-          vertical-align: inherit;
-          border-color: inherit; }
-          .deliver-options-box form table tbody tr td {
-            border-color: #0199d5;
-            border-right: none;
-            padding: 20px 8px 20px 0;
-            border: 2px solid #f9f9f9;
-            min-height: 110px;
-            position: relative;
-            vertical-align: top; }
-            .deliver-options-box form table tbody tr td a {
-              display: table-cell;
-              max-width: 100%;
-              padding-right: 20px;
-              position: static;
-              vertical-align: top;
-              width: 1%;
-              left: 15px;
-              padding: 0;
-              top: 15px; }
-
-.deliver-tr {
-  background: #fff !important; }
-  .deliver-tr td {
-    background: #fff !important;
-    padding: 0 !important;
-    line-height: 10px !important; }
-
-.product-item-details {
-  padding-left: 20px;
-  display: table-cell;
-  vertical-align: top;
-  white-space: normal;
-  min-width: 397px; }
-  .product-item-details strong {
-    overflow: inherit;
-    font-size: 1.8rem;
-    display: block;
-    margin: -3px 0 5px;
-    height: auto;
-    max-height: inherit; }
-    .product-item-details strong span {
-      margin-top: 5px;
-      float: left;
-      font-size: 1.4rem;
-      color: #444; }
-  .product-item-details .promotion-message-secondly, .product-item-details .promotion-message {
-    clear: both;
-    font-size: 14px;
-    color: #ff0909;
-    margin: 5px 0;
-    font-family: 'HP Simplified Light';
-    min-height: 15px; }
-
-.col {
-  border-color: #0199d5;
-  border-right: none;
-  border-left: none;
-  min-width: 150px;
-  border: 2px solid #f9f9f9;
-  text-align: right;
-  padding: 20px 11px 10px;
-  display: table-cell;
-  border-collapse: inherit; }
-  .col .field .control {
-    float: left; }
-    .col .field .control input {
-      height: 85px;
-      border: none;
-      margin-top: 0;
-      color: #999;
-      font-size: 2rem;
-      width: 60px;
-      text-align: center;
-      background: #fff;
-      background-clip: padding-box;
-      border-radius: 1px;
-      font-family: 'HP Simplified Light','Helvetica Neue',Helvetica,Arial,sans-serif;
-      line-height: 1.42857143;
-      padding: 0 9px;
-      vertical-align: baseline;
-      outline: none;
-      box-sizing: border-box; }
-      .col .field .control input div {
-        display: none; }
-
-.qty-actions {
-  float: left; }
-  .qty-actions span {
-    float: left;
-    clear: both;
-    width: 50px;
-    height: 40px;
-    line-height: 43px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    text-align: center;
-    background: #fff;
-    font-size: 3rem;
-    color: #999;
-    cursor: pointer;
-    font-family: 'HP Simplified Light'; }
-
-.price {
-  margin-top: 0;
-  font-size: 2rem;
-  display: block;
-  margin-top: 5px; }
-
-.fudiv div {
-  text-align: left; }
-
-.fu-td {
-  padding-left: 3px;
-  padding-right: 4px; }
-  .fu-td div {
-    min-height: 20px;
-    padding-bottom: 15px;
-    position: relative; }
-    .fu-td div a span {
-      font-size: 3rem; }
-
-.cart-summary {
-  width: 20%;
-  float: right;
-  -ms-flex-order: 2;
-  -webkit-order: 2;
-  order: 2;
-  padding: 1px 20px 0;
-  position: relative;
-  font-family: 'HP Simplified Light';
-  overflow: hidden;
-  width: 19%;
-  padding-bottom: 0;
-  z-index: 1;
-  background: #f9f9f9;
-  margin-bottom: 25px;
-  margin-top: 20px; }
-  .cart-summary p span {
-    display: inline-block;
-    width: 50%;
-    float: left;
-    padding: 11px 10px; }
-
-.summary {
-  display: block;
-  margin-bottom: 0;
-  margin-top: 45px;
-  font-size: 1.6rem; }
-
-.summary-p1 {
-  margin: 0 0 10px;
-  padding: 12px 20px 12px 25px;
-  display: block;
-  font-size: 1.3rem;
-  background: #fdf0d5;
-  color: #6f4400;
-  float: left; }
-
-.pay {
-  width: 100%;
-  margin-top: 10px;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
-  padding: 14px 17px;
+.page-title-wrapper {
+  display: inline-block;
+  font-size: 3.3rem;
+  font-weight: 500;
   color: #000;
-  transition: all .5s;
-  border: none;
-  background: #007dba;
-  color: #fff;
-  border: 1px solid black;
-  cursor: pointer; }
-
-.pay:hover {
-  background: #fff;
-  color: #000;
-  border: 1px solid black; }
-
-.cart {
-  height: 36px;
-  overflow: hidden;
-  min-width: 100%;
-  line-height: 36px; }
-  .cart .cart-a1 {
-    float: left; }
-  .cart .cart-a2 {
-    float: right; }
-  .cart a {
-    color: #0199d5 !important;
-    text-decoration: underline !important; }
+  font-family: 'HP Simplified Light'; }
