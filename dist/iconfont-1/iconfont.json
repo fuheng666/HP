@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "107543",
+      "name": "笔",
+      "font_class": "pen",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "712323",
+      "name": "垃圾桶2",
+      "font_class": "icon-trash-2",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
       "icon_id": "839839",
       "name": "列表",
       "font_class": "liebiao",

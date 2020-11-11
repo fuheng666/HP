@@ -51,7 +51,7 @@ gulp.task('build',['copy-html','html','images','data','scripts','scss'],function
 gulp.task('watch',function(){
     gulp.watch('*.html',['copy-html']);
     gulp.watch('./html/*.html',['html']);
-    gulp.watch('*.{jpg,png}',['images']);
+    gulp.watch('./images/**/*.{jpg,png}',['images']);
     gulp.watch(['*.json','!package.json'],['data']);
     gulp.watch(['js/*.js','!gulpfile.js'],['scripts']);
     gulp.watch('./stylesheet/*.scss',['scss']);

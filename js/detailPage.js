@@ -26,6 +26,8 @@ require.config({
   */
   require(['nav','magnify'], function(nav,magnify){
     nav.pull();
-    magnify.mag()
+    magnify.mag();
+    magnify.tab()
+    magnify.tav()
   })
   

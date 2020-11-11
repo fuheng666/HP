@@ -1045,11 +1045,11 @@ a {
 }
 #mark {
   display: none;
-  width: 200px !important;
-  height: 200px !important;
-  background-color: white !important;
-  opacity: 0.5 !important;
-  filter: (opacity=50) !important;
+  width: 200px ;
+  height: 200px ;
+  background-color: #000;
+  opacity: 0.5 ;
+  filter: (opacity=50) ;
   position: absolute !important;
   left: 0px ;
   top: 0px ;
@@ -1061,11 +1061,32 @@ a {
   position: absolute;
   left: 1008px;
   top: 268px;
-  display: block;
+  display: none;
   overflow: hidden;
 }
 #big img {
   position: absolute;
-  width: 1000px ;
-  height: 1458px ;
+  width: 1234px;
+  height: 987px ;
+  background-color: #fff;
+}
+.bor:hover{
+  border: 1px solid #0199d5 !important;
+  transition: 1s;
+  transform:scale(1.1);
+}
+.Fotorama__div{
+  p{
+    position: absolute;
+    display: inline-block;
+    background-color: rgba(0,0,0,.3);
+    z-index: 99999;
+    height: 72px;
+    line-height: 72px;
+    cursor:pointer;
+  }
+
+}
+.a2{
+  right: 9px;
 }

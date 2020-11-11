@@ -8,7 +8,8 @@ require.config({
       parabola: "parabola",
       trade:'trade',
       banner: "banner",
-      nav:'nav'
+      nav:'nav',
+      productListLoad:'productListLoad'
     },
     //jquery-cookie 是依赖于jquery开发
     shim: {
@@ -25,8 +26,14 @@ require.config({
   /*
     好处：模块和模块之间的关系清晰，所以的代码的，其中一个模块有问题，其他代码不受影响。
   */
-  require(['trade','banner','nav'], function(trade,banner,nav){
-    trade.shop();
+  require(['trade','nav','productListLoad'], function(trade,nav,productListLoad){
+
     nav.pull();
+    productListLoad.tab()
+    trade.download(),
+    trade.sc_btnClick()
+    trade. Remove()
+    trade.Mouseout()
+    trade. Clicked()
   })
   

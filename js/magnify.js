@@ -1,6 +1,5 @@
 define(['jquery'],function($){
     function mag(){
-
             $("#small")
               .mouseenter(function () {
                 $("#mark,#big").show();
@@ -26,7 +25,33 @@ define(['jquery'],function($){
               })
              
     }
+    function tab(){
+       var oImg = $('.Fotorama__div').find('div img')
+       var oImg_1=$('#small img')
+       var oImg_2=$('#big img')
+       oImg.attr('class','bor')
+       oImg.on('mouseenter',function(){
+      
+         var iNow= $(this).attr('src')
+         oImg_1.attr('src',iNow)
+         oImg_2.attr('src',iNow)
+       })
+    }
+    function tav(){
+      var  oDiv = $('.Fotorama__div')
+        var p=$('.Fotorama__div p')
+        console.log(p.eq(0))
+        p.eq(0).click(function(){
+          oDiv.animate({left:-164 },200)
+        })
+        p.eq(1).click(function(){
+          oDiv.animate({left:0 },200)
+        })
+    }
     return{
-        mag
+        mag,
+        tab,
+        tav
+
     }
 })
