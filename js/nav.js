@@ -26,7 +26,17 @@ define(['jquery'],function(){
                 })
 
         }
+        function dog(){
+            var img =$('.slide-img')
+            var btn =$('.slide-div').find('i')
+            btn.mouseenter(function(){
+                img.stop(true).animate({opacity:1},1000)
+            }).mouseleave(function(){
+                img.stop(true).animate({opacity:0},1000)
+            })
+        }
         return{
-            pull
+            pull,
+            dog
         }
 })

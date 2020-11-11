@@ -25,5 +25,6 @@ require.config({
   */
   require(['nav'], function(nav){
     nav.pull();
+    nav.dog()
   })
   

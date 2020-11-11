@@ -927,3 +927,37 @@ a {
     margin: 10px 0 35px;
     color: #000;
     font-weight: 700; }
+
+#small {
+  border: 1px solid black !important;
+  position: relative !important; }
+
+#small img {
+  width: 100% !important;
+  height: 100% !important; }
+
+#mark {
+  display: none;
+  width: 200px !important;
+  height: 200px !important;
+  background-color: white !important;
+  opacity: 0.5 !important;
+  filter: opacity=50 !important;
+  position: absolute !important;
+  left: 0px;
+  top: 0px; }
+
+#big {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  position: absolute;
+  left: 1008px;
+  top: 268px;
+  display: block;
+  overflow: hidden; }
+
+#big img {
+  position: absolute;
+  width: 1000px;
+  height: 1458px; }
