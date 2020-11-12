@@ -6,7 +6,8 @@ require.config({
       jquery: "jquery-1.11.3",
       "jquery-cookie": "jquery.cookie",
       parabola: "parabola",
-      nav:'nav'
+      nav:'nav',
+      productListLoad:'productListLoad'
     },
     //jquery-cookie 是依赖于jquery开发
     shim: {
@@ -23,7 +24,14 @@ require.config({
   /*
     好处：模块和模块之间的关系清晰，所以的代码的，其中一个模块有问题，其他代码不受影响。
   */
-  require(['nav'], function(nav){
+  require(['nav','productListLoad'], function(nav,productListLoad){
     nav.pull();
+    productListLoad.tab()
+    productListLoad.download(),
+    productListLoad.sc_btnClick()
+    productListLoad. Remove()
+    productListLoad.Mouseout()
+    productListLoad. Clicked()
+    productListLoad. Clacked()
   })
   

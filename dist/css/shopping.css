@@ -590,9 +590,9 @@ Li-1 ul li {
             min-height: 110px;
             position: relative;
             vertical-align: top; }
-            .deliver-options-box form table tbody tr td a {
+            .deliver-options-box form table tbody tr td .Fu-a {
               display: table-cell;
-              max-width: 100%;
+              max-width: 165px;
               padding-right: 20px;
               position: static;
               vertical-align: top;
@@ -600,6 +600,8 @@ Li-1 ul li {
               left: 15px;
               padding: 0;
               top: 15px; }
+              .deliver-options-box form table tbody tr td .Fu-a img {
+                max-width: 165px; }
 
 .deliver-tr {
   background: #fff !important; }
@@ -772,3 +774,90 @@ Li-1 ul li {
   .cart a {
     color: #0199d5 !important;
     text-decoration: underline !important; }
+
+.buy {
+  position: fixed;
+  width: 390px;
+  top: 10.8%;
+  left: 60%;
+  height: auto;
+  background-color: #f2f2f2;
+  z-index: 9999;
+  border: 1px solid #000;
+  border-top: 0;
+  display: none; }
+
+.buy-div1 i {
+  float: left; }
+  .buy-div1 i span {
+    font-size: 18px;
+    color: #db4700;
+    font-weight: 400; }
+
+.buy-div1 i:last-child {
+  float: right; }
+
+.buy-btn {
+  width: 100%;
+  margin-top: 15px;
+  float: left;
+  text-align: center;
+  border-bottom: #ccc 1px solid; }
+  .buy-btn a {
+    display: inline-block;
+    line-height: 2.2rem;
+    padding: 14px 112px;
+    background: #0199d5;
+    color: #fff;
+    transition: 1s;
+    border: 1px solid #000;
+    margin-bottom: 15px; }
+  .buy-btn a:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000; }
+
+.buy-ul {
+  overflow-y: auto;
+  padding: 15px;
+  height: 500px; }
+  .buy-ul li {
+    float: left; }
+    .buy-ul li img {
+      float: left; }
+    .buy-ul li div {
+      display: inline-block;
+      width: 74%;
+      margin-left: 7px;
+      font-size: 1.5rem !important;
+      color: #5a5a5a !important;
+      text-align: left; }
+      .buy-ul li div a {
+        font-size: 1.5rem !important;
+        color: #5a5a5a !important;
+        line-height: 20px; }
+      .buy-ul li div a:hover {
+        text-decoration: underline; }
+    .buy-ul li input {
+      text-align: center;
+      width: 40px;
+      height: 32px;
+      background: #fff;
+      background-clip: padding-box;
+      border: 1px solid #c2c2c2;
+      border-radius: 1px;
+      font-family: 'HP Simplified Light','Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      line-height: 1.42857143;
+      padding: 0 9px;
+      vertical-align: baseline; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+input[type="number"] {
+  -moz-appearance: textfield; }
+
+.delete_goodsBtn {
+  cursor: pointer; }

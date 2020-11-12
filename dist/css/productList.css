@@ -788,9 +788,9 @@ a {
 .buy {
   position: fixed;
   width: 390px;
-  top: 11.5%;
+  top: 10.8%;
   left: 60%;
-  height: 100%;
+  height: auto;
   background-color: #f2f2f2;
   z-index: 9999;
   border: 1px solid #000;
@@ -828,36 +828,39 @@ a {
     border: 1px solid #000; }
 
 .buy-ul {
-  float: left;
-  padding: 15px; }
-  .buy-ul li img {
+  overflow-y: auto;
+  padding: 15px;
+  height: 500px; }
+  .buy-ul li {
     float: left; }
-  .buy-ul li div {
-    display: inline-block;
-    width: 77%;
-    margin-left: 7px;
-    font-size: 1.5rem !important;
-    color: #5a5a5a !important;
-    text-align: left; }
-    .buy-ul li div a {
+    .buy-ul li img {
+      float: left; }
+    .buy-ul li div {
+      display: inline-block;
+      width: 74%;
+      margin-left: 7px;
       font-size: 1.5rem !important;
       color: #5a5a5a !important;
-      line-height: 20px; }
-    .buy-ul li div a:hover {
-      text-decoration: underline; }
-  .buy-ul li input {
-    text-align: center;
-    width: 40px;
-    height: 32px;
-    background: #fff;
-    background-clip: padding-box;
-    border: 1px solid #c2c2c2;
-    border-radius: 1px;
-    font-family: 'HP Simplified Light','Helvetica Neue',Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    line-height: 1.42857143;
-    padding: 0 9px;
-    vertical-align: baseline; }
+      text-align: left; }
+      .buy-ul li div a {
+        font-size: 1.5rem !important;
+        color: #5a5a5a !important;
+        line-height: 20px; }
+      .buy-ul li div a:hover {
+        text-decoration: underline; }
+    .buy-ul li input {
+      text-align: center;
+      width: 40px;
+      height: 32px;
+      background: #fff;
+      background-clip: padding-box;
+      border: 1px solid #c2c2c2;
+      border-radius: 1px;
+      font-family: 'HP Simplified Light','Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      line-height: 1.42857143;
+      padding: 0 9px;
+      vertical-align: baseline; }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -865,3 +868,6 @@ input::-webkit-inner-spin-button {
 
 input[type="number"] {
   -moz-appearance: textfield; }
+
+.delete_goodsBtn {
+  cursor: pointer; }

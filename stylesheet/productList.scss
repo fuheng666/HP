@@ -908,9 +908,9 @@ a {
 .buy{
   position:fixed;
   width: 390px;
-  top:11.5%;
+  top:10.8%;
   left:60%;
-  height:100%;
+  height:auto;
   background-color:  #f2f2f2;
   z-index: 9999;
   border: 1px solid #000;
@@ -954,15 +954,18 @@ a {
   }
 }
 .buy-ul{
-  float: left;
+  overflow-y: auto;
   padding: 15px;
+  height: 500px;
+  
   li{
+    float: left;
     img{
       float: left;
     }
     div{
       display: inline-block;
-      width: 77%;
+      width: 74%;
       margin-left: 7px;
       font-size: 1.5rem !important;
       color: #5a5a5a !important;
@@ -1001,4 +1004,7 @@ input::-webkit-inner-spin-button {
 }
 input[type="number"]{
   -moz-appearance: textfield;
+}
+.delete_goodsBtn{
+  cursor: pointer;
 }

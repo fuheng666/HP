@@ -102,10 +102,10 @@ define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
           sum += cookieArr[i].num;
         }
       }
-      $(".sc_right .sc_num").html(sum);
+      $(".sc_right .sc_num").html(sum+1);
     }
     function sc_msg(){
-      $(".sc_right ul").empty();
+      $(".buy-ul").empty();
       $.ajax({
         type: "get",
         url:'../data/datalist.json',
@@ -113,23 +113,28 @@ define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
           var cookieStr = $.cookie("goods");
           var newArr = [];
           var sum=0
+          var Nm=0
           if(cookieStr){
             var cookieArr = JSON.parse(cookieStr);
             var newArr=[]
             for(var i=0;i<cookieArr.length;i++){
                 for(var j=0;j<arr.length;j++){
                     if(cookieArr[i].id==j){
+                      arr['num']=cookieArr[i].num
+                      arr[j].action = cookieArr[i].num;
                         newArr.push(arr[j])
                     }
                 }
-                sum+=parseInt(newArr[i].价格.slice(1))
-                console.log(sum)
+                sum+=parseInt((newArr[i].价格.slice(1))*(newArr[i].action))
+                Nm+=parseInt(newArr[i].action)
                 $('#F-sp').html(`￥${sum}`)
+                $('#F-num').html(Nm)
+                $('#F-sp1').html(Nm)
             }
-            $(".buy-ul").find("li").remove();
+          
             //将找出来的数据，在右侧购物车的部分加载出来
             for(var i = 0; i < newArr.length; i++){
-              var node = $(` <li style="margin-bottom: 10px;">
+              var node = $(` <li style="margin-bottom: 10px;" id='${i}'>
               <img src="${ newArr[i].图片}" alt="" style="width: 75px;">
               <div>
                 <a href="" >${newArr[i].标题} </a>
@@ -137,10 +142,10 @@ define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
                     <span style="display: inline-block;margin-top: 7px;">${newArr[i].价格}</span>
                     <div style="float: right;">
                       <div style="float: right; width: auto;">
-                        <input type="number" maxlength="12" value="1" >
+                        <input type="number" maxlength="12" value="${newArr[i].action}" >
                       <i class="iconfont">&#xe608;
                       </i>
-                      <i class="iconfont" >&#xe658;
+                      <i class="iconfont delete_goodsBtn" >&#xe658;
                       </i>
                       </div>
                     </div>
@@ -149,6 +154,12 @@ define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
             </li>`);
               node.appendTo($(".buy-ul"));
             }
+          }else{
+        
+              $('#F-sp').html('￥0')
+              $('#F-num').html('0')
+              $('#F-sp1').html('')
+
           }
         },
         error:function(msg){
@@ -175,7 +186,8 @@ define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
     //点击+ -
     function Clicked(){
       //删除
-      $('.sc_right ul').on('click','.delete_goodsBtn',function(){
+      $('.buy-ul').on('click','.delete_goodsBtn',function(){
+      
         var id=$(this).closest('li').remove().attr('id');
         var cookieArr=JSON.parse($.cookie('goods'));
         var index = cookieArr.findIndex(item => item.id == id);
@@ -183,7 +195,8 @@ define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
         cookieArr.length === 0 ? $.cookie("goods", null) : $.cookie("goods", JSON.stringify(cookieArr), {
                     expires: 7
                })
-        sc_num()
+               sc_msg();
+               sc_num();
       })
       //加减
       $('.sc_right ul').on('click',".sc_goodsNum button",function(){

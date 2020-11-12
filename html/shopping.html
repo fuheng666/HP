@@ -6,6 +6,7 @@
     <title>游戏 - 笔记本及平板 | HP官网- 惠普中国在线商店</title>
     <link rel="stylesheet" href="../css/shopping.min.css" />
     <link rel="stylesheet" href="../iconfont/iconfont.css" />
+    <link rel="stylesheet" href="../iconfont-1/iconfont.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -390,7 +391,29 @@
           <div id="action" style="margin-right: 20px; margin-bottom: 10px">
             <ul style="width: 300px">
               <li class="iconfont" style="font-size: 2.8rem">&#xe614;</li>
-              <li class="iconfont" style="font-size: 3rem">&#xe652;</li>
+              <li
+                class="iconfont buy-ico"
+                style="font-size: 3rem; position: relative"
+              >
+                &#xe652;
+                <span id="F-sp1"
+                  style="
+                    display: inline-block;
+                    border-radius: 50%;
+                    background-color: #F15916;
+                    color: white;
+                    position: absolute;
+                    top: -2px;
+                    right: -9px;
+                    font-size: 1.1rem;
+                    min-width: 17px;
+                    height: auto;
+                    line-height: 17px;
+                    text-align: center;
+                  "
+                  ></span
+                >
+              </li>
               <li class="iconfont" style="font-size: 2.5rem">&#xe632;</li>
               <li class="iconfont" style="font-size: 2.5rem">&#xe610;</li>
             </ul>
@@ -876,11 +899,11 @@
       </div>
           <div class="deliver-options-box">
             <form action="">
-              <table>
-                <tbody>
+              <table id="F-table">
+                <!-- <tbody>
                   <tr>
                     <td>
-                      <a href="">
+                      <a href="" class="Fu-a">
                         <img
                           src="https://media.hpstore.cn/catalog/product/cache/3a98496dd7cb0c8b28c4c254a98f915a/1/4/14__16.png"
                           alt=""
@@ -981,14 +1004,14 @@
                   <tr class="deliver-tr">
                     <td colspan="100" class="blank-line">&nbsp;</td>
                   </tr>
-                </tbody>
+                </tbody> -->
                 
               </table>
             </form>
           </div>
           <div class="cart">
               <a href="" class="cart-a1" >清空购物车</a>
-              <a href="" class="cart-a2">更新购物车</a>
+              <a href="http://localhost:6868/html/productList.html" class="cart-a2">继续购物</a>
           </div>
         </section>
       
@@ -1181,6 +1204,89 @@
       </p>
       <span>Copyright © 2018 HP Development Company, L.P.</span>
       <span><i class="iconfont">&#xe730;</i> 惠普员工：报告网站问题</span>
+    </div>
+    <div class="buy">
+      <div
+        class="triangleBuy"
+        class="div6"
+        style="
+          height: 10px;
+          position: relative;
+          display: block;
+          z-index: 99999;
+        "
+      >
+        <em
+          style="
+            font-size: 30px;
+            position: absolute;
+            color: #c1c1c1;
+            top: -17px;
+            left: 89%;
+            z-index: 99999;
+          "
+          >&#9670;</em
+        >
+        <span
+          style="
+            font-size: 30px;
+            position: absolute;
+            color: #f2f2f2;
+            top: -16px;
+            left: 89%;
+            z-index: 99999;
+          "
+          >&#9670;</span
+        >
+      </div>
+      <div style="overflow: hidden">
+        <span
+          style="
+            float: right;
+            font-size: 3rem;
+            cursor: pointer;
+            margin-right: 5px;
+            color: #8f8f8f;
+            width: 40px;
+            margin-bottom: 10px;
+          "
+          class="sp-btn"
+          >x</span
+        >
+      </div>
+      <div class="buy-div1" style="overflow: hidden">
+        <p style="overflow: hidden">
+          <i style="margin-left: 19px"><span id="F-num"></span>商品</i>
+          <i style="margin-right: 19px"
+            >购物车小计：<span id="F-sp"></span
+          ></i>
+        </p>
+      </div>
+      <div class="buy-btn">
+        <a href="http://localhost:6868/html/shopping.html">
+          <span>查看和编辑购物车</span>
+        </a>
+      </div>
+      <ul class="buy-ul" style="overflow-y: auto">
+        <!-- <li style="margin-bottom: 10px;">
+          <img src="https://media.hpstore.cn/catalog/product/cache/314dec89b3219941707ad62ccc90e585/1/_/1_96_18.jpg" alt="" style="width: 75px;">
+          <div>
+            <a href="" >惠普(HP)暗影精灵6锐龙版 OMEN Laptop 15-en0007AX 15.6英寸游戏笔记本电脑 </a>
+            <p style="float: left;">
+                <span style="display: inline-block;margin-top: 7px;">￥8099</span>
+                <div style="float: right;">
+                  <div style="float: right; width: auto;">
+                    <input type="number" maxlength="12" value="1" >
+                  <i class="iconfont">&#xe608;
+                  </i>
+                  <i class="iconfont" >&#xe658;
+                  </i>
+                  </div>
+                </div>
+            </p>
+          </div>
+        </li> -->
+      </ul>
     </div>
   </body>
 </html>
