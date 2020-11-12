@@ -21,7 +21,7 @@ define(['jquery','jquery-cookie'],function($){
                         str+=`
                         <li class="li-2">
                       <div class="idv"><span class="s1">${arr[i].关键词.trim()=='热销'?'热销':''}</span><span class='s2'>${arr[i].关键词.trim()=='新品'?'新品':''}</span ></div>
-                      <div class="idv1"><img src="${arr[i].图片}" alt=""></div>
+                      <div class="idv1"><a href='${arr[i].标题_链接}'><img src="${arr[i].图片}" alt=""></a></div>
                       <div class="idv2">
                             <div>
                                 <p>
@@ -61,7 +61,7 @@ define(['jquery','jquery-cookie'],function($){
                   str1+=`
                   <li class="li-2">
                 <div class="idv"><span class="s1">${arr[j].关键词.trim()=='热销'?'热销':''}</span><span class='s2'>${arr[j].关键词.trim()=='新品'?'新品':''}</span ></div>
-                <div class="idv1"><img src="${arr[j].图片}" alt=""></div>
+                <div class="idv1"><a href='${arr[j].标题_链接}'><img src="${arr[j].图片}" alt=""></a></div>
                 <div class="idv2">
                       <div>
                           <p>
@@ -101,7 +101,7 @@ define(['jquery','jquery-cookie'],function($){
             str2+=`
             <li class="li-2">
           <div class="idv"><span class="s1">${arr[j].关键词.trim()=='热销'?'热销':''}</span><span class='s2'>${arr[j].关键词.trim()=='新品'?'新品':''}</span ></div>
-          <div class="idv1"><img src="${arr[j].图片}" alt=""></div>
+          <div class="idv1"><a href='${arr[j].标题_链接}'><img src="${arr[j].图片}" alt=""></a></div>
           <div class="idv2">
                 <div>
                     <p>
@@ -141,7 +141,7 @@ define(['jquery','jquery-cookie'],function($){
       str3+=`
       <li class="li-2">
     <div class="idv"><span class="s1">${arr[j].关键词.trim()=='热销'?'热销':''}</span><span class='s2'>${arr[j].关键词.trim()=='新品'?'新品':''}</span ></div>
-    <div class="idv1"><img src="${arr[j].图片}" alt=""></div>
+    <div class="idv1"><a href='${arr[j].标题_链接}'><img src="${arr[j].图片}" alt=""></a></div>
     <div class="idv2">
           <div>
               <p>
@@ -181,7 +181,7 @@ $(".conList .ul1").eq(3).html(str3);
     str4+=`
     <li class="li-2">
   <div class="idv"><span class="s1">${arr[j].关键词.trim()=='热销'?'热销':''}</span><span class='s2'>${arr[j].关键词.trim()=='新品'?'新品':''}</span ></div>
-  <div class="idv1"><img src="${arr[j].图片}" alt=""></div>
+  <div class="idv1"><a href='${arr[j].标题_链接}'><img src="${arr[j].图片}" alt=""></a></div>
   <div class="idv2">
         <div>
             <p>
@@ -221,7 +221,7 @@ for(let j=16;j<=19;j++){
   str5+=`
   <li class="li-2">
 <div class="idv"><span class="s1">${arr[j].关键词.trim()=='热销'?'热销':''}</span><span class='s2'>${arr[j].关键词.trim()=='新品'?'新品':''}</span ></div>
-<div class="idv1"><img src="${arr[j].图片}" alt=""></div>
+<div class="idv1"><a href='${arr[j].标题_链接}'><img src="${arr[j].图片}" alt=""></a></div>
 <div class="idv2">
       <div>
           <p>
@@ -261,7 +261,7 @@ $(".conList .ul1").eq(5).html(str5);
       str6+=`
       <li class="li-2">
     <div class="idv"><span class="s1">${arr[j].关键词.trim()=='热销'?'热销':''}</span><span class='s2'>${arr[j].关键词.trim()=='新品'?'新品':''}</span ></div>
-    <div class="idv1"><img src="${arr[j].图片}" alt=""></div>
+    <div class="idv1"><a href='${arr[j].标题_链接}'><img src="${arr[j].图片}" alt=""></a></div>
     <div class="idv2">
           <div>
               <p>
@@ -301,7 +301,7 @@ for(let j=24;j<=27;j++){
   str7+=`
   <li class="li-2">
 <div class="idv"><span class="s1">${arr[j].关键词.trim()=='热销'?'热销':''}</span><span class='s2'>${arr[j].关键词.trim()=='新品'?'新品':''}</span ></div>
-<div class="idv1"><img src="${arr[j].图片}" alt=""></div>
+<div class="idv1"><a href='${arr[j].标题_链接}'><img src="${arr[j].图片}" alt=""></a></div>
 <div class="idv2">
       <div>
           <p>
@@ -341,7 +341,7 @@ for(let j=28;j<=31;j++){
   str8+=`
   <li class="li-2">
 <div class="idv"><span class="s1">${arr[j].关键词.trim()=='热销'?'热销':''}</span><span class='s2'>${arr[j].关键词.trim()=='新品'?'新品':''}</span ></div>
-<div class="idv1"><img src="${arr[j].图片}" alt=""></div>
+<div class="idv1"><a href='${arr[j].标题_链接}'><img src="${arr[j].图片}" alt=""></a></div>
 <div class="idv2">
       <div>
           <p>

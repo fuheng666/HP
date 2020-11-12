@@ -200,9 +200,11 @@ define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
                       for(var j=0;j<arr.length;j++){
                           if(cookieArr[i].id==j){
                             arr[j].action = cookieArr[i].num;
+                            arr[j].action6 = cookieArr[i].id;
                               newArr.push(arr[j])
                           }
                       }
+                
                       sum+=parseInt((newArr[i].价格.slice(1))*(newArr[i].action))
                       Nm+=parseInt(newArr[i].action)
                       $('#F-sp').html(`￥${sum}`)
@@ -212,11 +214,10 @@ define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
                       
                   }
                   //将找出来的数据，在右侧购物车的部分加载出来
-                console.log(newArr)
                   for(var i = 0; i < newArr.length; i++){
                     oum=parseInt()
                     var node = $(`
-                  <tbody id='${i}'>
+                  <tbody id='${newArr[i].action6}'>
                   <tr>
                     <td>
                       <a href=""  class="Fu-a">
@@ -393,11 +394,12 @@ define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
           function Clicked(){
             //删除
             $('#F-table').on('click','.delete_goodsBtn',function(){
-            
               var id=$(this).closest('tbody').remove().attr('id');
+              console.log(id)
               var cookieArr=JSON.parse($.cookie('goods'));
               var index = cookieArr.findIndex(item => item.id == id);
               cookieArr.splice(index, 1);
+              console.log( cookieArr)
               cookieArr.length === 0 ? $.cookie("goods", null) : $.cookie("goods", JSON.stringify(cookieArr), {
                           expires: 7
                      })
@@ -408,21 +410,23 @@ define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
 
            
             //加减
-            $('.sc_right ul').on('click',".sc_goodsNum button",function(){
-              var id = $(this).closest('li').attr('id')
+            $('#F-table').on('click',".control span",function(){
+              var id = $(this).closest('tbody').attr('id')
               var cookieArr = JSON.parse($.cookie('goods'));
+              
               var index = cookieArr.findIndex(item => item.id == id);
               if(this.innerHTML == '+'){
                 cookieArr[index].num++;
               }else{
-                cookieArr[index].num == 1? alert('数量为1，不能减少'): cookieArr[index].num--;	
+                cookieArr[index].num == 1? alert('减锤子呢？'): cookieArr[index].num--;	
               }
-              $(this).siblings('span').html(`商品数量：${cookieArr[index].num}`)
+              $(this).closest('div').prev('div').find('input').val(cookieArr[index].num)
         
               $.cookie('goods',JSON.stringify(cookieArr),{
                 expires: 7
               })
               sc_num();
+              sc_msg();
             })
           }
             return {

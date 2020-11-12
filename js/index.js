@@ -104,7 +104,6 @@ define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
               }
             }
           }
-          
           //将找出来的数据，在右侧购物车的部分加载出来
           for(var i = 0; i < newArr.length; i++){
             var node = $(`<li id="${newArr[i].id}">

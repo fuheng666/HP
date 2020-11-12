@@ -120,8 +120,8 @@ define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
             for(var i=0;i<cookieArr.length;i++){
                 for(var j=0;j<arr.length;j++){
                     if(cookieArr[i].id==j){
-                      arr['num']=cookieArr[i].num
                       arr[j].action = cookieArr[i].num;
+                      arr[j].action6 = cookieArr[i].id;
                         newArr.push(arr[j])
                     }
                 }
@@ -134,7 +134,7 @@ define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
           
             //将找出来的数据，在右侧购物车的部分加载出来
             for(var i = 0; i < newArr.length; i++){
-              var node = $(` <li style="margin-bottom: 10px;" id='${i}'>
+              var node = $(` <li style="margin-bottom: 10px;" id='${newArr[i].action6}'>
               <img src="${ newArr[i].图片}" alt="" style="width: 75px;">
               <div>
                 <a href="" >${newArr[i].标题} </a>
@@ -199,12 +199,13 @@ define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
                sc_num();
       })
       //加减
-      $('.sc_right ul').on('click',".sc_goodsNum button",function(){
+      $('#F-table').on('click',".control span",function(){
         var id = $(this).closest('li').attr('id')
         var cookieArr = JSON.parse($.cookie('goods'));
         var index = cookieArr.findIndex(item => item.id == id);
         if(this.innerHTML == '+'){
           cookieArr[index].num++;
+          alert('你好')
         }else{
           cookieArr[index].num == 1? alert('数量为1，不能减少'): cookieArr[index].num--;	
         }
