@@ -429,6 +429,14 @@ define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
               sc_msg();
             })
           }
+          function img(){
+            $('.pay').click(function(){
+              $('#money').css('display','block')
+            })
+            $('#Fa-lse').click(function(){
+              $('#money').css('display','none')
+            })
+          }
             return {
               download,
               sc_btnClick,
@@ -436,7 +444,8 @@ define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
               Mouseout,
               Clicked,
               tab,
-              Clacked
+              Clacked,
+              img
  
                      }           
 })

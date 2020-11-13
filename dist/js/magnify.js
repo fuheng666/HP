@@ -8,10 +8,10 @@ define(['jquery'],function($){
                 $("#mark,#big").hide();
               })
               .mousemove(function(ev){
-                var l = ev.clientX - $(this).offset().left - 100;
+                var l = ev.pageX - $(this).offset().left - 100;
                 l = Math.max(0, l);
                 l = Math.min(l, 417);
-                var t = ev.clientY - $(this).offset().top - 100;
+                var t = ev.pageY - $(this).offset().top - 100;
                 t = Math.max(0, t);
                 t = Math.min(t, 293);
                 $("#mark").css({
@@ -40,7 +40,6 @@ define(['jquery'],function($){
     function tav(){
       var  oDiv = $('.Fotorama__div')
         var p=$('.Fotorama__div p')
-        console.log(p.eq(0))
         p.eq(0).click(function(){
           oDiv.animate({left:-164 },200)
         })

@@ -234,25 +234,22 @@ a {
 //banner
 #play {
     overflow: hidden;
-    width: 1903px;
+    min-width: 100%;
     min-height: 694px;
     position: relative;
     top: 105px;
     ul {
-        width: 1300%;
+        min-width: 1300%;
           min-height:100%;
             position: absolute;
-            left: -1903px;
-        li {
-            width: 1903px;
-            height: 100%;
-            float: left;
+            left: -101%;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: row;
+        li {
+            height: 100% ;
+          
             img {
-                float: left;
-                width: 1903px;
+                min-width:100% !important;
                 min-height: 694px;
               }
           }
@@ -308,7 +305,6 @@ a {
 
   #FLeft{
       z-index: 999;
-
       line-height: 50px;
       width: 30px;
       height: 50px;

@@ -244,25 +244,21 @@ a {
 
 #play {
   overflow: hidden;
-  width: 1903px;
+  min-width: 100%;
   min-height: 694px;
   position: relative;
   top: 105px; }
   #play ul {
-    width: 1300%;
+    min-width: 1300%;
     min-height: 100%;
     position: absolute;
-    left: -1903px; }
+    left: -101%;
+    display: flex;
+    flex-direction: row; }
     #play ul li {
-      width: 1903px;
-      height: 100%;
-      float: left;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
+      height: 100%; }
       #play ul li img {
-        float: left;
-        width: 1903px;
+        min-width: 100% !important;
         min-height: 694px; }
   #play .box {
     width: 100%;

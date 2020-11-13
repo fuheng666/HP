@@ -33,5 +33,6 @@ require.config({
     productListLoad.Mouseout()
     productListLoad. Clicked()
     productListLoad. Clacked()
+    productListLoad. img()
   })
   

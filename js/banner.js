@@ -9,12 +9,11 @@ define(['jquery'], function($){
       var play=$('#play')
       var oLi = $(".play").find("ul li");
       var img = $(".play").find("ul li img");
-
+      console.log()
       var iNow = 1;
       var timer = null;
       var w= $(window).width()
       clearInterval(timer);
-      console.log(w)
     left.click(function(){
      if(iNow>0){
       iNow--;
@@ -56,7 +55,7 @@ define(['jquery'], function($){
         iNow++;
         tab();
       }, 8000);
-
+      console.log()
       function tab() {
         aBtns.attr("id",'').eq(iNow-1).attr("id",'after');
 
@@ -66,14 +65,14 @@ define(['jquery'], function($){
 
         oUl.stop(true).animate(
           {
-            left: iNow * -1903,
+            left: iNow *-(oLi.eq(0).width()),
           },
           2000,
           function () {
             //判断是否是最后一张图片
             if (iNow === 12) {
               iNow = 1;
-              oUl.css("left", -1903);
+              oUl.css("left",-(oLi.eq(0).width()));
             }
           }
         );
